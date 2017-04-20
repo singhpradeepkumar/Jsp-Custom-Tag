@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+
+	<description>
+		Custom Tag
+	</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>Custom Tag Demo</short-name>
+	<tag>
+		<name>ap</name>
+		<tag-class>com.github.pradeep.jsp.customtag.ArithematicProgression</tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+			<name>a</name>
+			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>d</name>
+			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>n</name>
+			<required>yes</required>
+		</attribute>
+	</tag>
+</taglib>
