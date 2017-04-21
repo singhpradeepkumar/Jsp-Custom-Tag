@@ -10,9 +10,11 @@
 	</description>
 	<tlib-version>1.0</tlib-version>
 	<short-name>Custom Tag Demo</short-name>
+	
+	<!-- ***** Arithmetic Progression ***** -->
 	<tag>
 		<name>ap</name>
-		<tag-class>com.github.pradeep.jsp.customtag.ArithematicProgression</tag-class>
+		<tag-class>com.github.pradeep.jsp.customtag.ArithmeticProgression</tag-class>
 		<body-content>empty</body-content>
 		
 		<attribute>
@@ -26,6 +28,37 @@
 		<attribute>
 			<name>n</name>
 			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>output</name>
+			<description>ap (default)|an|sn; If set to 'ap' than it generates all series from a to a+(n-1)*d,
+			if set to 'an', prints nth series i.e. an; where an=a+(n-1)*d. If attribute is set to 'sn' then it generates
+			sn; where sn=n/2*(2a+(n-1)*d)</description>
+		</attribute>
+	</tag>
+	
+	<!-- ***** Geometric Progression ***** -->
+	<tag>
+		<name>gp</name>
+		<tag-class>com.github.pradeep.jsp.customtag.GeometricProgression</tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+			<name>a</name>
+			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>r</name>
+			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>n</name>
+			<required>yes</required>
+		</attribute>
+		<attribute>
+			<name>output</name>
+			<description>gp(default)|an|sn; If set to 'gp' than it generates all series from a to a*r^(n-1),
+			if set to 'an', prints nth series i.e. an; where an=a*r^(n-1). If attribute is set to 'sn' then work in progress. Will update soon.</description>
 		</attribute>
 	</tag>
 </taglib>
